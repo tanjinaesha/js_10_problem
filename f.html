@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var count = 0;
+        var input;
+        var sum = 0;
+    
+        for (let i = 0; i <= 9; i++){
+                input = parseInt(prompt("Enter a number"));
+                count++;
+                sum = sum + input;
+                sum = parseInt(sum);
+                average = parseFloat(sum/count);
+            }
+    
+        document.write("Average number is " + average);
+
+
+    
+    </script>
+</body>
+</html>

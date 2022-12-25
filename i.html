@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i, num, isPrime;
+
+    /*
+     * isPrime is used as flag variable. 
+     * If isPrime = 0, then number is composite
+     * else if isPrime = 1, then number is prime.
+     * Initially I have assumed the number as prime.
+     */
+    isPrime = 1; 
+
+    /* Input a number from user */
+    var num = prompt("Please enter your number");
+
+    for(i=2; i<=num/2; i++)
+    {
+        /* Check divisibility of num */
+        if(num%i==0)
+        {
+            /* Set isPrime to 0 indicating it as composite number */
+            isPrime = 0;
+
+            /* Terminate from loop */
+            break;
+        }
+    }
+
+    /*
+     * If isPrime contains 1 then it is prime
+     */
+    if(isPrime == 1 && num > 1)
+    {
+        document.write( num,"is prime number",);
+    }
+    else
+    {
+        document.write( num,"is composite number",);
+    }
+
+    </script>
+    
+</body>
+</html>

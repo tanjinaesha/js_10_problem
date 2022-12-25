@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var i,  sum = 0;
+
+    /* Input a number from user */
+    var num = prompt("Please enter your number");
+    
+    /* Calculate sum of all proper divisors */
+    for(i = 1; i <= num / 2; i++)
+    {
+        /* If i is a divisor of num */
+        if(num%i == 0)
+        {
+            sum += i;
+        }
+    }
+
+    /* Check whether the sum of proper divisors is equal to num */
+    if(sum == num && num > 0)
+    {
+        document.write( num," is PERFECT NUMBER");
+    }
+    else
+    {
+        document.write( num,"is NOT PERFECT NUMBER");
+    }
+
+      
+
+
+    </script>
+    
+</body>
+</html>
